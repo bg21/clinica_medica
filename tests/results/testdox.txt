@@ -1,0 +1,119 @@
+Appointment (Tests\Models\Appointment)
+ [x] Appointment creation
+ [x] Appointment save
+ [x] Appointment find
+ [ ] Appointment find by date
+ [ ] Appointment find by veterinarian
+ [ ] Appointment find by patient
+ [ ] Appointment find by status
+ [ ] Appointment today
+ [ ] Appointment availability
+ [x] Appointment status changes
+ [x] Appointment cancel
+ [x] Appointment methods
+ [x] Appointment date checks
+ [x] Appointment types and statuses
+ [x] Appointment relationships
+ [x] Appointment delete
+ [x] Appointment not found
+
+Client (Tests\Models\Client)
+ [x] Client creation
+ [x] Client save
+ [x] Client find
+ [x] Client find by cpf
+ [x] Client find by cnpj
+ [x] Client search by name
+ [x] Client update
+ [x] Client delete
+ [x] Client validation
+ [x] Client methods
+ [x] Client list
+ [x] Client not found
+
+Invoice (Tests\Models\Invoice)
+ [x] Invoice creation
+ [x] Invoice save
+ [ ] Invoice find
+ [ ] Invoice find by number
+ [ ] Invoice find by client
+ [ ] Invoice find by status
+ [ ] Invoice find by date
+ [ ] Invoice overdue
+ [ ] Invoice monthly
+ [ ] Invoice update
+ [ ] Invoice delete
+ [ ] Invoice status changes
+ [x] Invoice methods
+ [ ] Invoice date checks
+ [x] Invoice statuses
+ [ ] Invoice statistics
+ [x] Invoice relationships
+ [x] Invoice not found
+ [ ] Invoice number generation
+
+Medical Record (Tests\Models\MedicalRecord)
+ [x] Medical record creation
+ [x] Medical record save
+ [x] Medical record find
+ [x] Medical record find by patient
+ [x] Medical record find by veterinarian
+ [x] Medical record find by date
+ [x] Medical record find by type
+ [x] Medical record search by symptoms
+ [x] Medical record search by diagnosis
+ [x] Medical record update
+ [x] Medical record delete
+ [x] Medical record methods
+ [x] Medical record vital signs
+ [x] Medical record summary
+ [x] Medical record types and data
+ [x] Medical record relationships
+ [x] Medical record not found
+
+Medication (Tests\Models\Medication)
+ [x] Medication creation
+ [x] Medication save
+ [x] Medication find
+ [x] Medication find by name
+ [x] Medication find by category
+ [ ] Medication search by name
+ [ ] Medication search by active ingredient
+ [x] Medication update
+ [x] Medication delete
+ [x] Medication methods
+ [x] Medication categories
+ [x] Medication units
+ [x] Medication common medications
+ [x] Medication short description
+ [x] Medication list
+ [x] Medication not found
+ [x] Medication category methods
+
+Model Integration (Tests\Feature\ModelIntegration)
+ [ ] Complete workflow
+ [ ] Client patient relationship
+ [ ] Patient appointment relationship
+ [ ] Patient medical record relationship
+ [ ] Invoice client relationship
+ [x] Error handling
+ [ ] Logging integration
+ [ ] Performance with multiple records
+
+Patient (Tests\Models\Patient)
+ [x] Patient creation
+ [x] Patient save
+ [x] Patient find
+ [x] Patient find by microchip
+ [ ] Patient find by client
+ [ ] Patient find by species
+ [ ] Patient search by name
+ [x] Patient update
+ [ ] Patient delete
+ [x] Patient methods
+ [x] Patient species and breeds
+ [x] Patient client relationship
+ [ ] Patient list
+ [x] Patient not found
+ [x] Patient age calculation
+

@@ -1,0 +1,33 @@
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+
+# Diretórios do sistema
+tmp/
+cache/
+uploads/
+
+# Configurações locais
+.env
+config.php
+.htaccess
+
+# Dependências (se estiver usando composer)
+vendor/
+
+# IDEs e editores
+.idea/
+.vscode/
+*.iml
+
+# Node (se usar front-end com npm)
+node_modules/
+
+# Arquivos compilados
+*.exe
+*.dll
+*.obj
+*.pyc

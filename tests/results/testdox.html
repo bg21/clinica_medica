@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test Documentation</title>
+        <style>
+            body {
+                text-rendering: optimizeLegibility;
+                font-family: Source SansSerif Pro, Arial, sans-serif;
+                font-variant-ligatures: common-ligatures;
+                font-kerning: normal;
+                margin-left: 2rem;
+                background-color: #fff;
+                color: #000;
+            }
+
+            body > ul > li {
+                font-size: larger;
+            }
+
+            h2 {
+                font-size: larger;
+                text-decoration-line: underline;
+                text-decoration-thickness: 2px;
+                margin: 0;
+                padding: 0.5rem 0;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0 0 2rem;
+                padding: 0 0 0 1rem;
+                text-indent: -1rem;
+            }
+
+            .success:before {
+                color: #4e9a06;
+                content: '✓';
+                padding-right: 0.5rem;
+            }
+
+            .defect {
+                color: #a40000;
+            }
+
+            .defect:before {
+                color: #a40000;
+                content: '✗';
+                padding-right: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Appointment (Tests\Models\Appointment)</h2>
+        <ul>
+            <li class="defect">Appointment creation</li>
+            <li class="defect">Appointment save</li>
+            <li class="defect">Appointment find</li>
+            <li class="defect">Appointment find by date</li>
+            <li class="defect">Appointment find by veterinarian</li>
+            <li class="defect">Appointment find by patient</li>
+            <li class="defect">Appointment find by status</li>
+            <li class="defect">Appointment today</li>
+            <li class="defect">Appointment availability</li>
+            <li class="defect">Appointment status changes</li>
+            <li class="defect">Appointment cancel</li>
+            <li class="defect">Appointment methods</li>
+            <li class="defect">Appointment date checks</li>
+            <li class="defect">Appointment types and statuses</li>
+            <li class="defect">Appointment relationships</li>
+            <li class="defect">Appointment delete</li>
+            <li class="defect">Appointment not found</li>
+        </ul>
+        <h2>Client (Tests\Models\Client)</h2>
+        <ul>
+            <li class="defect">Client creation</li>
+            <li class="defect">Client save</li>
+            <li class="defect">Client find</li>
+            <li class="defect">Client find by cpf</li>
+            <li class="defect">Client find by cnpj</li>
+            <li class="defect">Client search by name</li>
+            <li class="defect">Client update</li>
+            <li class="defect">Client delete</li>
+            <li class="defect">Client validation</li>
+            <li class="defect">Client methods</li>
+            <li class="defect">Client list</li>
+            <li class="defect">Client not found</li>
+        </ul>
+        <h2>Invoice (Tests\Models\Invoice)</h2>
+        <ul>
+            <li class="defect">Invoice creation</li>
+            <li class="defect">Invoice save</li>
+            <li class="defect">Invoice find</li>
+            <li class="defect">Invoice find by number</li>
+            <li class="defect">Invoice find by client</li>
+            <li class="defect">Invoice find by status</li>
+            <li class="defect">Invoice find by date</li>
+            <li class="defect">Invoice overdue</li>
+            <li class="defect">Invoice monthly</li>
+            <li class="defect">Invoice update</li>
+            <li class="defect">Invoice delete</li>
+            <li class="defect">Invoice status changes</li>
+            <li class="defect">Invoice methods</li>
+            <li class="defect">Invoice date checks</li>
+            <li class="defect">Invoice statuses</li>
+            <li class="defect">Invoice statistics</li>
+            <li class="defect">Invoice relationships</li>
+            <li class="defect">Invoice not found</li>
+            <li class="defect">Invoice number generation</li>
+        </ul>
+        <h2>Medical Record (Tests\Models\MedicalRecord)</h2>
+        <ul>
+            <li class="defect">Medical record creation</li>
+            <li class="defect">Medical record save</li>
+            <li class="defect">Medical record find</li>
+            <li class="defect">Medical record find by patient</li>
+            <li class="defect">Medical record find by veterinarian</li>
+            <li class="defect">Medical record find by date</li>
+            <li class="defect">Medical record find by type</li>
+            <li class="defect">Medical record search by symptoms</li>
+            <li class="defect">Medical record search by diagnosis</li>
+            <li class="defect">Medical record update</li>
+            <li class="defect">Medical record delete</li>
+            <li class="defect">Medical record methods</li>
+            <li class="defect">Medical record vital signs</li>
+            <li class="defect">Medical record summary</li>
+            <li class="defect">Medical record types and data</li>
+            <li class="defect">Medical record relationships</li>
+            <li class="defect">Medical record not found</li>
+        </ul>
+        <h2>Medication (Tests\Models\Medication)</h2>
+        <ul>
+            <li class="defect">Medication creation</li>
+            <li class="defect">Medication save</li>
+            <li class="defect">Medication find</li>
+            <li class="defect">Medication find by name</li>
+            <li class="defect">Medication find by category</li>
+            <li class="defect">Medication search by name</li>
+            <li class="defect">Medication search by active ingredient</li>
+            <li class="defect">Medication update</li>
+            <li class="defect">Medication delete</li>
+            <li class="defect">Medication methods</li>
+            <li class="defect">Medication categories</li>
+            <li class="defect">Medication units</li>
+            <li class="defect">Medication common medications</li>
+            <li class="defect">Medication short description</li>
+            <li class="defect">Medication list</li>
+            <li class="defect">Medication not found</li>
+            <li class="defect">Medication category methods</li>
+        </ul>
+        <h2>Model Integration (Tests\Feature\ModelIntegration)</h2>
+        <ul>
+            <li class="defect">Complete workflow</li>
+            <li class="defect">Client patient relationship</li>
+            <li class="defect">Patient appointment relationship</li>
+            <li class="defect">Patient medical record relationship</li>
+            <li class="defect">Invoice client relationship</li>
+            <li class="defect">Error handling</li>
+            <li class="defect">Logging integration</li>
+            <li class="defect">Performance with multiple records</li>
+        </ul>
+        <h2>Patient (Tests\Models\Patient)</h2>
+        <ul>
+            <li class="defect">Patient creation</li>
+            <li class="defect">Patient save</li>
+            <li class="defect">Patient find</li>
+            <li class="defect">Patient find by microchip</li>
+            <li class="defect">Patient find by client</li>
+            <li class="defect">Patient find by species</li>
+            <li class="defect">Patient search by name</li>
+            <li class="defect">Patient update</li>
+            <li class="defect">Patient delete</li>
+            <li class="defect">Patient methods</li>
+            <li class="defect">Patient species and breeds</li>
+            <li class="defect">Patient client relationship</li>
+            <li class="defect">Patient list</li>
+            <li class="defect">Patient not found</li>
+            <li class="defect">Patient age calculation</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="D:\xampp\htdocs\clinica_medica\phpunit.xml" tests="105" assertions="319" errors="4" failures="29" skipped="0" time="215.914842">
+    <testsuite name="Feature" tests="8" assertions="13" errors="0" failures="7" skipped="0" time="16.856205">
+      <testsuite name="Tests\Feature\ModelIntegrationTest" file="D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php" tests="8" assertions="13" errors="0" failures="7" skipped="0" time="16.856205">
+        <testcase name="testCompleteWorkflow" file="D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php" line="26" class="Tests\Feature\ModelIntegrationTest" classname="Tests.Feature.ModelIntegrationTest" assertions="3" time="3.742888">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ModelIntegrationTest::testCompleteWorkflow&#13;
+Failed asserting that null is not null.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php:66</failure>
+        </testcase>
+        <testcase name="testClientPatientRelationship" file="D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php" line="131" class="Tests\Feature\ModelIntegrationTest" classname="Tests.Feature.ModelIntegrationTest" assertions="1" time="2.098160">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ModelIntegrationTest::testClientPatientRelationship&#13;
+Failed asserting that actual size 0 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php:153</failure>
+        </testcase>
+        <testcase name="testPatientAppointmentRelationship" file="D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php" line="165" class="Tests\Feature\ModelIntegrationTest" classname="Tests.Feature.ModelIntegrationTest" assertions="1" time="1.616468">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ModelIntegrationTest::testPatientAppointmentRelationship&#13;
+Failed asserting that actual size 0 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php:188</failure>
+        </testcase>
+        <testcase name="testPatientMedicalRecordRelationship" file="D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php" line="200" class="Tests\Feature\ModelIntegrationTest" classname="Tests.Feature.ModelIntegrationTest" assertions="1" time="1.514888">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ModelIntegrationTest::testPatientMedicalRecordRelationship&#13;
+Failed asserting that actual size 0 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php:224</failure>
+        </testcase>
+        <testcase name="testInvoiceClientRelationship" file="D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php" line="236" class="Tests\Feature\ModelIntegrationTest" classname="Tests.Feature.ModelIntegrationTest" assertions="1" time="1.829175">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ModelIntegrationTest::testInvoiceClientRelationship&#13;
+Failed asserting that actual size 0 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php:259</failure>
+        </testcase>
+        <testcase name="testErrorHandling" file="D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php" line="268" class="Tests\Feature\ModelIntegrationTest" classname="Tests.Feature.ModelIntegrationTest" assertions="3" time="1.967427"/>
+        <testcase name="testLoggingIntegration" file="D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php" line="290" class="Tests\Feature\ModelIntegrationTest" classname="Tests.Feature.ModelIntegrationTest" assertions="1" time="1.813180">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ModelIntegrationTest::testLoggingIntegration&#13;
+Failed asserting that an array is not empty.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php:305</failure>
+        </testcase>
+        <testcase name="testPerformanceWithMultipleRecords" file="D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php" line="314" class="Tests\Feature\ModelIntegrationTest" classname="Tests.Feature.ModelIntegrationTest" assertions="2" time="2.274018">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ModelIntegrationTest::testPerformanceWithMultipleRecords&#13;
+Failed asserting that actual size 11 matches expected size 10.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Feature\ModelIntegrationTest.php:338</failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Models" tests="97" assertions="306" errors="4" failures="22" skipped="0" time="199.058637">
+      <testsuite name="Tests\Models\InvoiceTest" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" tests="19" assertions="43" errors="3" failures="10" skipped="0" time="39.925130">
+        <testcase name="testInvoiceStatusChanges" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="233" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="2.027335">
+          <error type="TypeError">Tests\Models\InvoiceTest::testInvoiceStatusChanges&#13;
+TypeError: App\Models\Invoice::find(): Argument #1 ($id) must be of type int, null given, called in D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php on line 248
+&#13;
+D:\xampp\htdocs\clinica_medica\App\Models\Invoice.php:38
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:248</error>
+        </testcase>
+        <testcase name="testInvoiceFind" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="47" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="0" time="1.672433">
+          <error type="TypeError">Tests\Models\InvoiceTest::testInvoiceFind&#13;
+TypeError: App\Models\Invoice::find(): Argument #1 ($id) must be of type int, null given, called in D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php on line 60
+&#13;
+D:\xampp\htdocs\clinica_medica\App\Models\Invoice.php:38
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:60</error>
+        </testcase>
+        <testcase name="testInvoiceDelete" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="211" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="1.701558">
+          <error type="TypeError">Tests\Models\InvoiceTest::testInvoiceDelete&#13;
+TypeError: App\Models\Invoice::find(): Argument #1 ($id) must be of type int, null given, called in D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php on line 229
+&#13;
+D:\xampp\htdocs\clinica_medica\App\Models\Invoice.php:38
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:229</error>
+        </testcase>
+        <testcase name="testInvoiceUpdate" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="182" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="2.459484">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\InvoiceTest::testInvoiceUpdate&#13;
+Failed asserting that false is true.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:201</failure>
+        </testcase>
+        <testcase name="testInvoiceOverdue" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="146" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="1.773372">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\InvoiceTest::testInvoiceOverdue&#13;
+Failed asserting that actual size 0 matches expected size 1.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:161</failure>
+        </testcase>
+        <testcase name="testInvoiceMonthly" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="164" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="1.955580">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\InvoiceTest::testInvoiceMonthly&#13;
+Failed asserting that actual size 0 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:179</failure>
+        </testcase>
+        <testcase name="testInvoiceNumberGeneration" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="404" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="2.354334">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\InvoiceTest::testInvoiceNumberGeneration&#13;
+Failed asserting that 'INV-2025100001' is not equal to 'INV-2025100001'.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:425</failure>
+        </testcase>
+        <testcase name="testInvoiceFindByStatus" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="103" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="1.831117">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\InvoiceTest::testInvoiceFindByStatus&#13;
+Failed asserting that actual size 0 matches expected size 1.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:120</failure>
+        </testcase>
+        <testcase name="testInvoiceStatistics" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="341" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="9" time="1.990302">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\InvoiceTest::testInvoiceStatistics&#13;
+Failed asserting that 0 matches expected 4.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:372</failure>
+        </testcase>
+        <testcase name="testInvoiceFindByDate" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="126" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="1.799004">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\InvoiceTest::testInvoiceFindByDate&#13;
+Failed asserting that actual size 0 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:143</failure>
+        </testcase>
+        <testcase name="testInvoiceFindByNumber" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="66" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="1.721393">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\InvoiceTest::testInvoiceFindByNumber&#13;
+Failed asserting that null is not null.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:81</failure>
+        </testcase>
+        <testcase name="testInvoiceDateChecks" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="297" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="1.750415">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\InvoiceTest::testInvoiceDateChecks&#13;
+Failed asserting that true is false.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:312</failure>
+        </testcase>
+        <testcase name="testInvoiceFindByClient" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="85" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="2.823513">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\InvoiceTest::testInvoiceFindByClient&#13;
+Failed asserting that actual size 0 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php:100</failure>
+        </testcase>
+        <testcase name="testInvoiceRelationships" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="378" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="2" time="2.484384"/>
+        <testcase name="testInvoiceSave" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="28" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="4" time="2.377431"/>
+        <testcase name="testInvoiceCreation" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="22" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="1" time="2.111211"/>
+        <testcase name="testInvoiceStatuses" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="330" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="5" time="2.258688"/>
+        <testcase name="testInvoiceMethods" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="259" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="9" time="2.609990"/>
+        <testcase name="testInvoiceNotFound" file="D:\xampp\htdocs\clinica_medica\tests\Models\InvoiceTest.php" line="395" class="Tests\Models\InvoiceTest" classname="Tests.Models.InvoiceTest" assertions="2" time="2.223587"/>
+      </testsuite>
+      <testsuite name="Tests\Models\PatientTest" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" tests="15" assertions="43" errors="1" failures="4" skipped="0" time="31.170369">
+        <testcase name="testPatientDelete" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="183" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="1" time="1.867043">
+          <error type="TypeError">Tests\Models\PatientTest::testPatientDelete&#13;
+TypeError: App\Models\Patient::find(): Argument #1 ($id) must be of type int, null given, called in D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php on line 200
+&#13;
+D:\xampp\htdocs\clinica_medica\App\Models\Patient.php:43
+D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php:200</error>
+        </testcase>
+        <testcase name="testPatientFindBySpecies" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="113" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="1" time="1.697969">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\PatientTest::testPatientFindBySpecies&#13;
+Failed asserting that actual size 1 matches expected size 2.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php:128</failure>
+        </testcase>
+        <testcase name="testPatientSearchByName" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="134" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="1" time="1.841851">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\PatientTest::testPatientSearchByName&#13;
+Failed asserting that actual size 0 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php:149</failure>
+        </testcase>
+        <testcase name="testPatientList" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="268" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="1" time="2.350838">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\PatientTest::testPatientList&#13;
+Failed asserting that actual size 6 matches expected size 5.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php:287</failure>
+        </testcase>
+        <testcase name="testPatientFindByClient" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="91" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="1" time="2.318461">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\PatientTest::testPatientFindByClient&#13;
+Failed asserting that actual size 4 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php:110</failure>
+        </testcase>
+        <testcase name="testPatientClientRelationship" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="252" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="2" time="2.506353"/>
+        <testcase name="testPatientSpeciesAndBreeds" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="234" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="7" time="2.378211"/>
+        <testcase name="testPatientAgeCalculation" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="306" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="6" time="1.934417"/>
+        <testcase name="testPatientCreation" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="22" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="1" time="1.956252"/>
+        <testcase name="testPatientFind" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="47" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="3" time="1.893372"/>
+        <testcase name="testPatientFindByMicrochip" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="66" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="2" time="2.328649"/>
+        <testcase name="testPatientMethods" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="204" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="8" time="2.097133"/>
+        <testcase name="testPatientSave" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="28" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="3" time="1.959748"/>
+        <testcase name="testPatientNotFound" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="297" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="2" time="1.809262"/>
+        <testcase name="testPatientUpdate" file="D:\xampp\htdocs\clinica_medica\tests\Models\PatientTest.php" line="155" class="Tests\Models\PatientTest" classname="Tests.Models.PatientTest" assertions="4" time="2.230810"/>
+      </testsuite>
+      <testsuite name="Tests\Models\AppointmentTest" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" tests="17" assertions="58" errors="0" failures="6" skipped="0" time="38.134905">
+        <testcase name="testAppointmentToday" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="144" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="1" time="2.736791">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\AppointmentTest::testAppointmentToday&#13;
+Failed asserting that actual size 0 matches expected size 1.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php:159</failure>
+        </testcase>
+        <testcase name="testAppointmentFindByStatus" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="121" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="1" time="2.082585">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\AppointmentTest::testAppointmentFindByStatus&#13;
+Failed asserting that actual size 0 matches expected size 1.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php:138</failure>
+        </testcase>
+        <testcase name="testAppointmentAvailability" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="162" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="2" time="2.213236">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\AppointmentTest::testAppointmentAvailability&#13;
+Failed asserting that true is false.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php:183</failure>
+        </testcase>
+        <testcase name="testAppointmentFindByDate" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="65" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="1" time="2.235519">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\AppointmentTest::testAppointmentFindByDate&#13;
+Failed asserting that actual size 0 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php:82</failure>
+        </testcase>
+        <testcase name="testAppointmentFindByPatient" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="103" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="1" time="2.108248">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\AppointmentTest::testAppointmentFindByPatient&#13;
+Failed asserting that actual size 0 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php:118</failure>
+        </testcase>
+        <testcase name="testAppointmentFindByVeterinarian" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="85" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="1" time="2.345160">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\AppointmentTest::testAppointmentFindByVeterinarian&#13;
+Failed asserting that actual size 0 matches expected size 3.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php:100</failure>
+        </testcase>
+        <testcase name="testAppointmentFind" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="46" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="3" time="2.169025"/>
+        <testcase name="testAppointmentMethods" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="233" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="10" time="2.158608"/>
+        <testcase name="testAppointmentNotFound" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="372" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="1" time="1.958834"/>
+        <testcase name="testAppointmentDelete" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="349" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="2" time="2.014980"/>
+        <testcase name="testAppointmentDateChecks" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="265" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="7" time="2.269302"/>
+        <testcase name="testAppointmentRelationships" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="323" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="6" time="2.403564"/>
+        <testcase name="testAppointmentCreation" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="23" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="1" time="2.293719"/>
+        <testcase name="testAppointmentStatusChanges" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="186" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="4" time="2.437775"/>
+        <testcase name="testAppointmentTypesAndStatuses" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="299" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="12" time="1.750925"/>
+        <testcase name="testAppointmentSave" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="29" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="3" time="2.041975"/>
+        <testcase name="testAppointmentCancel" file="D:\xampp\htdocs\clinica_medica\tests\Models\AppointmentTest.php" line="213" class="Tests\Models\AppointmentTest" classname="Tests.Models.AppointmentTest" assertions="2" time="2.914656"/>
+      </testsuite>
+      <testsuite name="Tests\Models\MedicationTest" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" tests="17" assertions="63" errors="0" failures="2" skipped="0" time="28.366516">
+        <testcase name="testMedicationSearchByName" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="97" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="2" time="2.280190">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\MedicationTest::testMedicationSearchByName&#13;
+Failed asserting that actual size 1 matches expected size 2.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php:118</failure>
+        </testcase>
+        <testcase name="testMedicationSearchByActiveIngredient" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="121" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="2" time="1.628083">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Models\MedicationTest::testMedicationSearchByActiveIngredient&#13;
+Failed asserting that actual size 1 matches expected size 2.
+&#13;
+D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php:142</failure>
+        </testcase>
+        <testcase name="testMedicationMethods" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="198" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="13" time="1.653381"/>
+        <testcase name="testMedicationCategories" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="235" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="6" time="1.477571"/>
+        <testcase name="testMedicationNotFound" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="317" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="2" time="1.416800"/>
+        <testcase name="testMedicationDelete" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="175" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="2" time="1.571789"/>
+        <testcase name="testMedicationCommonMedications" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="263" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="4" time="1.628951"/>
+        <testcase name="testMedicationCreation" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="13" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="1" time="1.644078"/>
+        <testcase name="testMedicationFind" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="37" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="3" time="1.479479"/>
+        <testcase name="testMedicationUnits" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="252" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="5" time="1.463382"/>
+        <testcase name="testMedicationSave" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="19" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="3" time="1.496305"/>
+        <testcase name="testMedicationFindByCategory" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="76" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="1" time="1.947601"/>
+        <testcase name="testMedicationUpdate" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="145" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="5" time="1.666795"/>
+        <testcase name="testMedicationFindByName" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="56" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="2" time="1.788402"/>
+        <testcase name="testMedicationCategoryMethods" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="326" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="6" time="1.697599"/>
+        <testcase name="testMedicationShortDescription" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="273" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="3" time="1.620046"/>
+        <testcase name="testMedicationList" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicationTest.php" line="291" class="Tests\Models\MedicationTest" classname="Tests.Models.MedicationTest" assertions="3" time="1.906065"/>
+      </testsuite>
+      <testsuite name="Tests\Models\ClientTest" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" tests="12" assertions="36" errors="0" failures="0" skipped="0" time="19.430315">
+        <testcase name="testClientCreation" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="13" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="1" time="1.563845"/>
+        <testcase name="testClientNotFound" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="231" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="3" time="1.372546"/>
+        <testcase name="testClientMethods" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="182" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="6" time="1.732134"/>
+        <testcase name="testClientValidation" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="163" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="4" time="1.569990"/>
+        <testcase name="testClientFindByCpf" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="52" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="2" time="1.457074"/>
+        <testcase name="testClientUpdate" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="116" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="4" time="1.578797"/>
+        <testcase name="testClientDelete" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="142" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="2" time="1.642149"/>
+        <testcase name="testClientSave" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="19" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="3" time="1.747568"/>
+        <testcase name="testClientSearchByName" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="90" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="3" time="1.585877"/>
+        <testcase name="testClientFindByCnpj" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="71" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="2" time="1.801529"/>
+        <testcase name="testClientFind" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="35" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="3" time="1.416847"/>
+        <testcase name="testClientList" file="D:\xampp\htdocs\clinica_medica\tests\Models\ClientTest.php" line="207" class="Tests\Models\ClientTest" classname="Tests.Models.ClientTest" assertions="3" time="1.961959"/>
+      </testsuite>
+      <testsuite name="Tests\Models\MedicalRecordTest" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" tests="17" assertions="63" errors="0" failures="0" skipped="0" time="42.031402">
+        <testcase name="testMedicalRecordNotFound" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="388" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="1" time="2.125931"/>
+        <testcase name="testMedicalRecordMethods" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="255" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="9" time="2.923770"/>
+        <testcase name="testMedicalRecordTypesAndData" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="338" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="12" time="2.374208"/>
+        <testcase name="testMedicalRecordCreation" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="23" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="1" time="1.915389"/>
+        <testcase name="testMedicalRecordFindByPatient" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="71" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="1" time="2.557959"/>
+        <testcase name="testMedicalRecordVitalSigns" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="290" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="9" time="2.693677"/>
+        <testcase name="testMedicalRecordRelationships" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="362" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="6" time="2.224504"/>
+        <testcase name="testMedicalRecordFindByType" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="130" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="2" time="2.870536"/>
+        <testcase name="testMedicalRecordFind" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="52" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="3" time="2.647897"/>
+        <testcase name="testMedicalRecordUpdate" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="202" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="5" time="2.245846"/>
+        <testcase name="testMedicalRecordSearchByDiagnosis" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="178" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="2" time="2.413397"/>
+        <testcase name="testMedicalRecordDelete" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="232" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="2" time="2.094901"/>
+        <testcase name="testMedicalRecordFindByDate" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="109" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="1" time="2.872260"/>
+        <testcase name="testMedicalRecordSave" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="29" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="3" time="2.379826"/>
+        <testcase name="testMedicalRecordFindByVeterinarian" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="90" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="1" time="2.864077"/>
+        <testcase name="testMedicalRecordSearchBySymptoms" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="154" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="2" time="2.291578"/>
+        <testcase name="testMedicalRecordSummary" file="D:\xampp\htdocs\clinica_medica\tests\Models\MedicalRecordTest.php" line="318" class="Tests\Models\MedicalRecordTest" classname="Tests.Models.MedicalRecordTest" assertions="3" time="2.535645"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
